@@ -57,7 +57,7 @@ The following are the 2 datasets were used for this project, and collected using
 
 NLP models were successfully developed to classify Reddit posts as either "Movies" or "Music", achieving high accuracy scores ranging from 0.98 to 1.00 on both training and test sets. Our analysis revealed that certain features, such as titles and posts content, and the presence or absence of common words (movies, film, actor, song, copy, director, sound, album, starter, etc.), played an important role in distinguishing between the two categories.
 
-Among the models evaluated, the XGBoost Classifier with CountVectorizer consistently demonstrated the best performance across various evaluation metrics, achieving high scores (1.00) for precision, recall, and F1-score on both the training and test sets with GridSearchCV. This exceptional performance underscores its effectiveness in accurately categorizing online content. The optimal hyperparameters identified for this model include a maximum feature count of 1000, using unigrams (1, 1) for the ngram range, using English stop words, a learning rate of 0.2, a maximum tree depth of 7, and 300 boosting rounds
+XGBoost Classifier with CountVectorizer consistently demonstrated high scores (1.00) for precision, recall, and F1-score on both the training and test sets with GridSearchCV. This exceptional performance underscores its effectiveness in accurately categorizing online content. While this Shows an excellent fit to the training data, it also suggests potential overfitting as the model may have memorized the training data, leading to identical predictions on the test set.
 
 ##### Recommendations
 
